@@ -1,0 +1,122 @@
+.intro-area {
+    align-items: center;
+    display: flex;
+    min-height: 100vh;
+    padding-top: 50px;
+
+  }
+.main-continer {
+    padding: 100px 25px;
+}
+
+.title {
+    height: 320px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+}
+
+.title-left{
+    left: 35px;
+}
+ 
+.title p {
+    background-color: #1d293a;
+    border-radius: 4px;
+    font-weight: 900;
+    padding: 5px 10px;
+    text-transform: uppercase;
+    transform-origin: 50%;
+    transform: rotate(-90deg);
+  }
+  .title p, .title ul li a {
+    color: hsla(0,0%,100%,.85);
+  }
+  
+  .title ul li {
+    margin-bottom: 10px;
+    list-style: none;
+  }
+  .title ul li a {
+    text-decoration: none;
+    text-align: center;
+  }
+  .title span {
+    width: 2px;
+    height: 100%;
+    background: hsla(0,0%,100%,.85);
+  }
+  .intro {
+    padding-left: 20%;
+    
+  }
+  .intro p {
+    color: #00cf5d;
+    font-size: 22px;
+  }
+  .intro h1 {
+    font-size: 78px;
+    font-weight: 900;
+    margin-bottom: 25px;
+    color: white;
+  }
+  .intro h3 {
+    color: #00cf5d;
+  }
+  .intro ul {
+    display: flex;
+    margin-bottom: 25px;
+  }
+  .intro ul li {
+    color: #ffffffd9;
+    margin-right: 25px;
+    position: relative;
+    list-style: none;
+  }
+  
+  .intro ul li:first-child::before {
+    opacity: 0;
+  }
+  .intro ul li:before {
+    background-color: #00cf5d;
+    border-radius: 10px;
+    content: "";
+    height: 8px;
+    left: -15px;
+    position: absolute;
+    top: 5px;
+    width: 8px;
+  } 
+  
+  .action{
+    height: 60px;
+    width: 1050px;
+  }
+  
+  .action a{
+    color:rgba(255, 255, 255, 0.85);
+    border-color:#00cf5d;
+    background-color:#00cf5d
+  }
+  .action a:last-child{
+    margin-left:15px;
+    color:rgba(255, 255, 255, 0.85);
+    border-color:#00cf5d;
+    background-color:transparent
+  }
+  
+  .btn {
+    border-radius: 4px;
+    border-style: solid;
+    border-width: 2px;
+    display: inline-block;
+    padding: 15px 25px;
+    text-decoration: none;
+  }
+  @media screen and (max-width:1200px) {
+    .intro-area{
+      width: fit-content;
+    }
+    
+}

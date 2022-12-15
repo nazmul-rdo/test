@@ -1,0 +1,48 @@
+#header{
+    position: fixed;
+    transform: translateY(0);
+    transition: all .5s;
+    width: 100%;
+    z-index: 10;
+  }
+  
+  .header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    padding: 0px 10%;
+  }
+  .logo img{
+    width: 50px;
+    height: 50px;
+  }
+  .menubar{
+    display: flex;
+    align-items: center;
+    gap: 10%;
+    padding-right: 17%;
+  }
+  .menubar a{
+     color: hsla(0,0%,100%,.85);
+      font-size: 16px;
+      font-weight: 400;
+      text-decoration: none;
+      text-transform: uppercase;
+  }
+  
+  .menubar a:last-child {
+    border: 2px solid #00cf5d;
+    border-radius: 4px;
+    display: inline-block;
+    padding: 8px 15px;
+  }
+    @media screen and (max-width:1050px) {
+      .logo img{
+        display: none;
+      }
+      .header{
+        justify-content: center;
+      }
+      
+    }
